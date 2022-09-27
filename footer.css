@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+
+footer {
+    padding: 0px;
+    width: 100%;
+    height: 75.5%;
+    position: relative;
+    z-index: 1;
+  
+    background-color: #0446aa;
+}
+
+.tarjeta_ {
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    top: 0px;
+    background-color:#0b5fdd;
+    position: relative;
+    z-index: 50;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tit{
+    text-align: center;
+    padding: 10px;
+    margin: 0%;
+    font-family: font_7;
+    font-weight: 300;
+    font-size: 300%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    top: 5%;
+    color: aliceblue;
+}
+
+.card12 {
+    margin-top: 0px;
+    text-align: center;
+    font-family: arial;
+    padding: 0%;
+    width: 200px;
+    gap: 10px;
+    height: 315px;
+    background-color: white;
+    color: #333;
+    z-index: 10;
+    animation: cardd 1s infinite alternate ease-in-out;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% auto;
+    overflow: hidden;
+    transition: 1s;
+}
+
+@keyframes cardd {
+    to {
+        box-shadow: -1px 0px 10px 12px rgba(0, 0, 0, 0);
+    }
+
+    from {
+        box-shadow: -1px 0px 20px 1px rgb(249, 249, 249);
+    }
+
+}
+
+
+
+#A {
+    color: rgb(114, 114, 114);
+}
+
+.titulo12 {
+    color: black;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.card12 h1 {
+    font-family: font_1;
+    font-size: medium;
+}
+
+.button12 {
+    border: none;
+    padding: 2px;
+    height: 25px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin: 0%;
+    font-family: font_4;
+    font-size: smaller;
+}
+
+.card12 h1 {
+    font-size: 11px;
+}
+
+.ico_1 i:hover {
+    transform: scale(110%);
+}
+
+#uno:hover {
+    color: #0446aa;
+}
+
+#dos:hover {
+    color: brown;
+}
+
+.foto img {
+    width: 100%;
+    height: 200%;
+    margin: 0%;
+}
+
+
+
+.foto {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button:hover,
+a:hover {
+    background-color: white;
+    color: #000;
+}
+
+
+.bo_1 {
+    background-color: rgb(87, 87, 87);
+    font-weight: 400;
+    color: white;
+    width: 100%;
+    border: 0px;
+    padding: 0%;
+    font-family: font_4;
+    font-size: smaller;
+    border: none;
+    cursor: pointer;
+    margin: 0%;
+    height: 25px;
+}
+
+.bo_2 {
+    height: 25px;
+    background-color: #333;
+    font-weight: 400;
+    color: white;
+    width: 100%;
+    border: 0px;
+    font-family: font_6;
+    font-size: smaller;
+    margin: 0%;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.card12 a {
+    margin: 0%;
+}
+
+.button12 i {
+    position: relative;
+    transform: scale(100%);
+    top: 1px;
+    margin-right: 5px;
+}
+
+
+.cuadro {
+    height: 50%;
+    padding: 0%;
+}
+
+.ico_1 {
+    transform: scale(80%);
+}
+
+button {
+    position: relative;
+    bottom: -3px;
+}
+
+.card12:hover {
+    transform: scale(110%);
+}
+
+#russo {
+    height: 150%;
+    position: relative;
+    top: -30px;
+    width: 200px;
+}
+
+#monjes {
+    height: 200%;
+    position: relative;
+    top: -80px;
+    width: 200px;
+}
+
+#benja {
+    height: 100%;
+    position: relative;
+    transform: scale(200%);
+    top: -20px;
+    left: -50px;
+    width: 250px;
+}

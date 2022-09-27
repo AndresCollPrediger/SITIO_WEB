@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/Navegación.css">
+    <link rel="stylesheet" href="/Scroll.css">
+    <link rel="stylesheet" href="consul.css">
+    <link rel="stylesheet" href="/Main.css">
+    <link rel="shortcut icon" href="/LOGO.svg">
+    <link rel="stylesheet" href="/Fonts.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JS -->
+    <script src="https://kit.fontawesome.com/926e725ef3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+
+    <a href="https://walink.co/cfbfc1" target="_blank" class="contacto_1">
+        <button class="contacto">
+            <div class="icono_">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h3>Contáctanos!</h3>
+        </button>
+    </a>
+    <nav>
+        <div class="logo">
+            <img class="emblema" src="/LOGO.svg" alt="">
+            <div class="circulo"></div>
+            <h3>Electronica Derivada</h3>
+        </div>
+
+        <div class="navbar" id="na">
+            <a class="casa" href="/index.html"><i class="fa-solid fa-house"><span>Home</span></i></a>
+            <a class="consultas" href="/Consultas/consultas.html">Consultas</a>
+            <i id="cuenta" class="fa-regular fa-user">
+                <a class="perfil" href="/Registrarse/login.html"><button>Registrarse</button></a>
+            </i>
+        </div>
+
+    </nav>
+    <div style="position: fixed;" class="holas"> <img src="/imagenes/circuit.jpg" class="circuito" alt="" height="100%">
+        <div class="blanco">
+            <div class="contenidos">
+
+                <i class="fa-regular fa-comment-dots" id="icon_mj"></i>
+                <h2 class="titulo_1"> COMENTA!</h2>
+
+                <div class="contactos__">
+                    <label for="email">
+                        <a class="email"
+                            href="mailto:andrescollsn@gmail.com?subject=Hola! Soy Andrés, el programador del sitio!! Gracias por contáctarte!"><i
+                                id="correo" class="fa-solid fa-envelope"></i>
+                            <p style="display:inline;"> andrescollsn@gmail.com</p>
+                        </a>
+                    </label>
+
+
+                    <label for="yt">
+                        <a class="youtube" id="yt" href="https://www.youtube.com/channel/UCGaDtgRLiwZNqSNwkWLayKw">
+                            <i id="canal" class="fa-brands fa-youtube"></i>
+                            <p style="display:inline;">Canal de Youtube</p>
+                        </a>
+                    </label>
+
+
+                    <label for="ubicacion">
+                        <a class="ubicacion" href="https://goo.gl/maps/EQvbYdADkuj3CrZ96">
+                            <i id="ubi" class="fa-solid fa-map-location"></i>
+                            <p style="display:inline;">Avenidad Central 2022</p>
+                        </a>
+                    </label>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divisor">
+
+        <aside>
+
+        </aside>
+
+        <main>
+            <h3 class="form"> Envíanos tus inquietudes!!</h3>
+
+            <div class="container">
+                <form id="formmm">
+                    <label for="fname">Nombre:</label>
+                    <input type="text" id="A" name="firstname" pattern="[A-Za-z]{1,20}" required placeholder="Ej: Pedro"
+                        title="Solo se admite el ingreso de hasta 20 letras">
+
+                    <label for="lname">Asunto:</label>
+                    <input type="text" id="A" name="asunto" maxlength="80" required
+                        placeholder="Ej: Resistencias céramicas">
+
+
+
+                    <label for="subject">Texto:</label>
+                    <textarea id="A" name="texto" maxlength="500" required placeholder="Hora de escribir..."
+                        style="height:200px"></textarea>
+
+                        <div class="check" style="display: flex;">
+                        <label class="switch">
+                            <input type="checkbox" id="check">
+                            <span class="slider"> </span>
+                          </label>
+                          <p>¿Usted es la primera vez que ingresa a nustro sitio?</p>
+                        </div>
+
+                    <div class="btn_1">
+
+                        <div class="boton_1">
+                        <i id="io" class="fa-solid fa-caret-up"></i>
+                        <input class="botones" type="submit" id="enviar_22" value="Envíar">
+                        </div>
+
+                        <div class="boton_2">
+                        <i id="ii" class="fa-solid fa-caret-up"></i>
+                        <input class="botones" type="reset" value="Reiniciar">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </main>
+
+    </div>
+    <script src="man.js"></script>
+</body>
+
+
+
+</html>

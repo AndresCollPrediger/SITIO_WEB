@@ -1,0 +1,467 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#side {
+    font-family: font_3;
+    transform: translateY(-90%);
+    position: relative;
+    text-align: center;
+    animation: side 2s 1.5s forwards ease;
+    -ms-flex: 30%;
+    flex: 29%;
+    padding: 0%;
+    height: auto;
+    z-index: 10;
+    color: #0446aa;
+    border: #0446aa 20px solid;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.productos {
+    display: grid;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    grid-template-columns: 50px auto;
+    grid-template-rows: auto;
+    background-color: #0446aa;
+    color: aliceblue;
+    margin-top: 0%;
+    padding: 10px;
+}
+
+.productos i {
+    margin-left: 5px;
+    margin-top: 30px;
+    scale: 200%;
+    animation: item__ 2s ease infinite;
+    background-color: aliceblue;
+    color: #0446aa;
+    padding: 5px;
+    padding-top: 2px;
+    border-radius: 50%;
+    height: 20px;
+}
+
+@keyframes item__ {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(0deg);
+    }
+
+    45% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-50deg);
+    }
+
+    55% {
+        transform: rotate(50deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    70% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+
+.productos h2 {
+    margin: auto;
+}
+
+@keyframes side {
+    to {
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+
+}
+
+
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.diapositiva {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(73, 73, 73, 0.507);
+    width: auto;
+    padding: 16px;
+    color: #0446aa;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 250px;
+}
+
+.diapositiva img {
+    width: 100%;
+    height: 250px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.numbertext {
+    color: #0446aa;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.caption-container {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    background-color: #88b7fd;
+    padding: 2px 16px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.caption-containe {
+    overflow: hidden;
+    text-align: center;
+    background-color: #88b7fd;
+    position: relative;
+    padding: 2px 16px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.column img {
+    height: 85%;
+}
+
+.colum {
+    float: left;
+    width: 16.66%;
+}
+
+.colum img {
+    height: 85%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.dem {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.activ,
+.dem:hover {
+    opacity: 1;
+}
+
+.cosas {
+    width: 100%;
+  
+}
+
+.carrusel h2 {
+    font-family: font_5;
+    text-decoration: underline;
+}
+
+.carrusel {
+    width: 100%;
+}
+
+.ino {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    border: #0446aa 2px solid;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 5px;
+    margin-bottom: 10px;
+    gap: 2;
+}
+
+.ino h2 {
+    margin: 0%;
+    text-decoration: none;
+}
+
+.ino i {
+    margin: auto;
+    margin-right: 10%;
+    transform: scale(150%);
+}
+
+#computer {
+    margin-right: 8px;
+}
+
+#ubicacion {
+    position: relative;
+    z-index: 10;
+    left: -2px;
+    animation: ubi 2s ease infinite;
+    color: #0446aa;
+    background-color: rgba(245, 222, 179, 0);
+}
+
+.circu {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    position: absolute;
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+@keyframes ubi {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(0deg);
+    }
+
+    45% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-50deg);
+    }
+
+    55% {
+        transform: rotate(50deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    70% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    90% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+
+.titulo_side {
+    position: relative;
+    width: 50px;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#stiky {
+    position: sticky;
+    top: 100px;
+    width: 100%;
+    height: 470px;
+    overflow: hidden;
+
+
+}
+
+.mapa {
+    position: relative;
+    left: 0%;
+    width: 100%;
+    height: 300px;
+    z-index: 50;
+}
+
+.video_1 {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+}
+
+.casillas {
+    display: grid;
+    height: auto;
+    margin: auto;
+    grid-template-columns: 10% 90% 10%;
+    grid-template-rows: auto;
+    margin-top: 0%;
+    position: relative;
+  
+}
+
+#mg {
+    position: relative;
+    top: 35%;
+    left: 70%;
+    scale: 150%;
+    animation: mgs 1s ease infinite alternate;
+}
+
+
+@keyframes mgs {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    10% {
+        transform: rotate(360deg);
+    }
+
+    20% {
+        transform: rotate(360deg);
+    }
+
+    30% {
+        transform: rotate(360deg);
+    }
+
+    40% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    60% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

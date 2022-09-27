@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registro</title>
+    <link rel="shortcut icon" href="/LOGO.svg">
+    <link rel="stylesheet" href="/Fonts.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fondo.css">
+    <link rel="stylesheet" href="/Navegación.css">
+    <link rel="stylesheet" href="/Scroll.css">
+
+
+    <!-- JS -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <script src=
+        "https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js">
+          </script>
+    <script src="https://kit.fontawesome.com/926e725ef3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    
+    <a href="https://walink.co/cfbfc1" target="_blank" class="contacto_1">
+        <button class="contacto">
+            <div class="icono_">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h3>Contáctanos!</h3>
+        </button>
+        </a>
+    <nav>
+        <div class="logo">
+            <img class="emblema" src="/LOGO.svg" alt="">
+            <div class="circulo"></div>
+            <h3>Electronica Derivada</h3>
+        </div>
+
+        <div class="navbar" id="na">
+            <a class="casa" href="/index.html"><i class="fa-solid fa-house"><span>Home</span></i></a>
+            <a class="consultas" href="/Consultas/consultas.html">Consultas</a>
+            <i id="cuenta" class="fa-regular fa-user">
+                <a class="perfil" href="/Registrarse/login.html"><button>Registrarse</button></a>
+            </i>
+        </div>
+
+    </nav>
+    <main class="mai" onload="enviar()">
+        <video src="/videos/fondo_2.mp4" class="fondo_1" type="video/mp4" autoplay muted loop>
+        </video>
+        <div class="registro">
+            <div class="videoss">
+                <img class="logo_" src="/LOGO.svg" alt="">
+            </div>
+            <div class="formulario" >
+    
+                <form id="status" onsubmit="enviar(event)" >
+                    <svg>
+                        <rect></rect>
+                    </svg>
+                    <h2 class="titulo">Registrate ya a <span style="font-family:font_2;" class="sp">"Electronica
+                            Derivada"!</span></h2>
+                    <div class="input-container">
+                        <i id="myInput" class="fa fa-user icon"></i>
+                        
+                        <input class="input-field" type="text" placeholder="Ingrese su nombre y apellido" name="Nombre y apellido" 
+                            required maxlength="35">
+                    </div>
+
+                    <div class="input-container">
+                        <i id="myInput" class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="email" placeholder="Ingrese su correo electrónico" name="email"
+                            required maxlength="35">
+                    </div>
+
+                    <div class="input-container">
+                        <i id="myInput" class="fa-solid fa-phone"></i>
+                        <input type="text" name="Caracteristica telefonica" class="input-field" id="aaa" readonly value="+54 336">
+
+                        <input class="input-field" type="text" id="telefono" 
+                            placeholder="Ingrese su número de celular" name="numero de celular" minlength="7" maxlength="7" required title="Solo se permite el ingreso de 7 números" pattern="[123456789]{7}" >
+                    </div>
+
+                    <div class="input-container">
+                        <i id="myInput" class="fa fa-key icon"></i>
+                        <span class="ojo">
+                            <i class="fas fa-eye-slash"></i>
+                        </span>
+                        <input class="input-field" type="password" width="100px" placeholder="Ingrese una contraseña"
+                            name="psw" required maxlength="35">
+                    </div>
+
+                    <div class="input-container" style="margin-bottom: 2px;">
+                        <i class="fa-sharp fa-solid fa-users" id="myInput"></i>
+                        <select class="selector" name="clase de usuario" style="color: #000000;"  required>
+                            <option value="" hidden  style="color: #000000;"> &nbsp; ¿Qué tipo de usuario eres? </option>
+                            <option value="" style="color:black;" >&nbsp;&nbsp;Estudiante</option>
+                            <option value="" style="color:black;">&nbsp;&nbsp;Aficionado/a</option>
+                            <option value="" style="color:black;">&nbsp;&nbsp;Docente</option>
+                            <option value="" style="color:black;">&nbsp;&nbsp;Profesional</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <a href="https://es-la.facebook.com/login/device-based/regular/login/" class="fb botn">
+                            <h3> <i class="fa fa-facebook fa-fw"></i> Registrarse con Facebook </h3>
+                        </a>
+                        <a href="https://accounts.google.com/servicelogin?hl=es" class="google botn">
+                            <h3><i class="fa fa-google fa-fw">
+                                </i> Registrarse con Google </h3>
+                        </a>
+                    </div>
+
+                    <button type="submit"  class="boton">Enviar</button>
+                    
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        const iconEye = document.querySelector(".ojo");
+
+        iconEye.addEventListener('click', function () {
+            const icon = this.querySelector("i");
+
+            if (this.nextElementSibling.type === 'password') {
+                this.nextElementSibling.type = 'text';
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            } else {
+                this.nextElementSibling.type = 'password';
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            }
+        });
+
+    </script>
+    <script src="enviar.js"></script>
+
+</body>
+
+</html>

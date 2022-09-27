@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Electrónica Derivada</title>
+    <link rel="shortcut icon" href="LOGO.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- JS -->
+    <script src="https://kit.fontawesome.com/926e725ef3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Encabezado.css">
+    <link rel="stylesheet" href="Navegación.css">
+    <link rel="stylesheet" href="Scroll.css">
+    <link rel="stylesheet" href="Fonts.css">
+    <link rel="stylesheet" href="infografia.css">
+    <link rel="stylesheet" href="side.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+
+<body id="body">
+
+    <!-- Encabezado -->
+    <header>
+        <div class="titulo_principal">
+            <h1 class="titulo">¡Bienvenidos a<br> Electrónica Derivada!</h1>
+
+            <div class="titulo_secundario">
+                <p>¡No dejes para mañana lo que podés<span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        &nbsp;</span> hoy!</p>
+                <ul>
+                    <li>comprar</li>
+                    <li>aprender</li>
+                    <li>hacer</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <video src="/videos/fondo.mp4" type="video/mp4" height=150% autoplay muted loop>
+        </video>
+        <video class="fondo" src="/videos/fondo_1.mp4" type="video/mp4" autoplay muted loop>
+        </video>
+
+
+    </header>
+
+
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="logo">
+            <img class="emblema" src="./LOGO.svg" alt="">
+            <div class="circulo"></div>
+            <h3>Electronica Derivada</h3>
+        </div>
+
+        <div class="navbar">
+            <a class="casa" href="/index.html"><i class="fa-solid fa-house"><span>Home</span></i></a>
+            <a class="consultas" href="/Consultas/consultas.html">Consultas</a>
+            <i id="cuenta" class="fa-regular fa-user">
+                <a class="perfil" href="/Registrarse/login.html"><button>Registrarse</button></a>
+            </i>
+        </div>
+
+
+    </nav>
+
+
+
+    <div class="row">
+        <div id="side">
+
+            <div id="cosas">
+                <div class="productos" style="margin-bottom:0%;">
+                    <div class="titulo_side">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                    <h2>Algunos de nuestros productos</h2>
+                </div>
+
+                <div class="carrusel">
+                    <div class="ino" style="text-align:center">
+                        <i class="fa-solid fa-microchip"></i>
+                        <h2>Componentes electronicos</h2>
+                    </div>
+                    <div class="container">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="/imagenes/capacitores.jpg" style="width:100% ">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="/imagenes/diodo.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="/imagenes/TIRISTORES.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="/imagenes/AO.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="/imagenes/resistencias.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="/imagenes/display.jpg" style="width:100%">
+                        </div>
+
+
+                        <div class="caption-container">
+
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                            <p id="caption"></p>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <img class="demo cursor" src="/imagenes/capacitores.jpg" style="width:100%"
+                                    onclick="currentSlide(1)" alt="Capacitores electrolíticos">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="/imagenes/diodo.jpg" style="width:100%"
+                                    onclick="currentSlide(2)" alt="Diodos">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="/imagenes/TIRISTORES.jpg" style="width:100%"
+                                    onclick="currentSlide(3)" alt="Tiristores">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="/imagenes/AO.jpg" style="width:100%"
+                                    onclick="currentSlide(4)" alt="Amplificadores Operacionales">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="/imagenes/resistencias.jpg" style="width:100%"
+                                    onclick="currentSlide(5)" alt="Resistencias">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="/imagenes/display.jpg" style="width:100%"
+                                    onclick="currentSlide(6)" alt="Display de 7 segmentos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("demo");
+                        let captionText = document.getElementById("caption");
+                        if (n > slides.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = slides.length }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        captionText.innerHTML = dots[slideIndex - 1].alt;
+                    }
+                </script>
+                <div class="carrusel">
+                    <div class="ino" style="text-align:center">
+                        <i class="fa-solid fa-computer" id="computer"></i>
+                        <h2>Dispositivos audiovisuales</h2>
+                    </div>
+
+                    <div class="container">
+                        <div class="diapositiva">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="/imagenes/monitor.jpg" style="width:100% ">
+                        </div>
+
+                        <div class="diapositiva">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="/imagenes/parlantes.jpeg" style="width:100%">
+                        </div>
+
+                        <div class="diapositiva">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="/imagenes/teclado.jpg" style="width:100%">
+                        </div>
+
+                        <div class="diapositiva">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="/imagenes/bafles.jpg" style="width:100%">
+                        </div>
+
+                        <div class="diapositiva">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="/imagenes/auris.jpg" style="width:100%">
+                        </div>
+
+                        <div class="diapositiva">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="/imagenes/casco.jpg" style="width:100%">
+                        </div>
+
+
+                        <div class="caption-containe">
+                            <a class="prev" onclick="plusSlide(-1)">❮</a>
+                            <a class="next" onclick="plusSlide(1)">❯</a>
+                            <p id="captio"></p>
+                        </div>
+
+                        <div class="row">
+                            <div class="colum">
+                                <img class="dem cursor" src="/imagenes/monitor.jpg" style="width:100%"
+                                    onclick="currentSlid(1)" alt="Monitor">
+                            </div>
+                            <div class="colum">
+                                <img class="dem cursor" src="/imagenes/parlantes.jpeg" style="width:90%"
+                                    onclick="currentSlid(2)" alt="Parlantes para PC">
+                            </div>
+                            <div class="colum">
+                                <img class="dem cursor" src="/imagenes/teclado.jpg" style="width:110%"
+                                    onclick="currentSlid(3)" alt="Teclado Gamer">
+                            </div>
+                            <div class="colum">
+                                <img class="dem cursor" src="/imagenes/bafles.jpg" style="width:100%"
+                                    onclick="currentSlid(4)" alt="Bafles dobles">
+                            </div>
+                            <div class="colum">
+                                <img class="dem cursor" src="/imagenes/auris.jpg" style="width:100%"
+                                    onclick="currentSlid(5)" alt="Auriculares inalámbricos">
+                            </div>
+                            <div class="colum">
+                                <img class="dem cursor" src="/imagenes/casco.jpg" style="width:100%"
+                                    onclick="currentSlid(6)" alt="Auriculares Gamer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="stiky">
+                <div class="productos" style="margin-bottom:0%;">
+                    <div class="titulo_side">
+                        <div class="circu"></div>
+                        <i class="fa-solid fa-location-dot" id="ubicacion"></i>
+                    </div>
+                    <h2>¿Donde nos encontramos?</h2>
+                </div>
+                <div class="video_1">
+                    <svg class="svg">
+                        <rect class="rect"></rect>
+                    </svg>
+                    <div class="intro_1">
+                        <iframe class="mapa"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5404.4644973094355!2d-60.1809321893875!3d-33.38031638011942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b75e7706071b25%3A0x71a59aa5d02a977a!2sBarrio%20Somisa%2C%20San%20Nicol%C3%A1s%20de%20Los%20Arroyos%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1663718631921!5m2!1ses-419!2sar"
+                            style="border:0;"></iframe>
+                        <div class="casillas">
+                            <div>
+                                <i class="fa-solid fa-thumbs-up" id="mg"></i>
+                            </div>
+                            <h3 id="tituloide">¡¡¡Vení a conocernos!!!</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                let slideInde = 1;
+                showSlide(slideInde);
+
+                function plusSlide(n) {
+                    showSlide(slideInde += n);
+                }
+
+                function currentSlid(n) {
+                    showSlide(slideInde = n);
+                }
+
+                function showSlide(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("diapositiva");
+                    let dots = document.getElementsByClassName("dem");
+                    let captionText = document.getElementById("captio");
+                    if (n > slides.length) { slideInde = 1 }
+                    if (n < 1) { slideInde = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" activ", "");
+                    }
+                    slides[slideInde - 1].style.display = "block";
+                    dots[slideInde - 1].className += " activ";
+                    captionText.innerHTML = dots[slideInde - 1].alt;
+                }
+            </script>
+
+        </div>
+
+        <a href="https://walink.co/cfbfc1" target="_blank" class="contacto_1">
+            <button class="contacto ">
+                <div class="icono_">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <h3>Contáctanos!</h3>
+            </button>
+        </a>
+
+        <div class="container-btn-mode">
+            <div id="id-sun" class="btn-mode sun active">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div id="id-moon" class="btn-mode moon">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+
+        <script>
+            /*Si clicamos en el botón del sol, borrarémos la clase css dark-mode del div 
+            con id page y se aplicará el estilo active al sol*/
+            document.getElementById('id-sun').onclick = function () {
+                document.getElementById('page').classList.remove('dark-mode');
+                document.getElementById('id-moon').classList.remove('active');
+                this.classList.add('active');
+                var blanco = document.getElementById('page');
+                blanco.style.backgroundColor = '#ffffff';
+                var texto_bl = document.getElementById('page');
+                texto_bl.style.color = '#3e3e3e';
+                var fo_1 = document.getElementById('cosas');
+                fo_1.style.backgroundColor = '#ffffff';
+                var texto_bl = document.getElementById('cosas');
+                texto_bl.style.color = '#0446aa';
+                var fo_1 = document.getElementById('side');
+                fo_1.style.backgroundColor = '#ffffff';
+                var fo_1 = document.getElementById('oj');
+                fo_1.style.Color = '#ffffff';
+
+                var gusta = document.getElementById('stiky');
+                gusta.style.color = '#0446aa';
+
+            }
+            /*Si clicamos en el botón de la luna, añadiremos la clase css dark-mode del div 
+            con id page y se aplicará el estilo active a la luna*/
+            document.getElementById('id-moon').onclick = function () {
+                document.getElementById('page').classList.add('dark-mode');
+                document.getElementById('id-sun').classList.remove('active');
+                this.classList.add('active');
+                var negro = document.getElementById('page');
+                negro.style.backgroundColor = '#3e3e3e';
+                var texto_nl = document.getElementById('page');
+                texto_nl.style.color = '#ffffff';
+                var fo_2 = document.getElementById('cosas');
+                fo_2.style.backgroundColor = '#3e3e3e';
+                var texto_nl = document.getElementById('cosas');
+                texto_nl.style.color = '#ffffff';
+                var fo_1 = document.getElementById('side');
+                fo_1.style.backgroundColor = '#3e3e3e';
+                var fo_1 = document.getElementById('oj');
+                fo_1.style.Color = '#3e3e3e';
+
+                var gusta = document.getElementById('stiky');
+                gusta.style.color = '#ffffff';
+
+
+            }
+
+        </script>
+
+
+        <!-- Main -->
+        <div class="main" id="page">
+
+            <div class="con">
+                <h5 class="modificacion"><i class="fa-solid fa-pen-to-square"></i> &nbsp; Última modificación: 24/9/2022
+                    &nbsp; &nbsp; | &nbsp; &nbsp;
+                </h5>
+                <span class="material-symbols-outlined" id="oj">
+                    visibility
+                </span>
+                <div id="sfc8tw5d88g5w6pqgru1lkl8mc395xdgqca" class="contador"> </div>
+                <script type="text/javascript"
+                    src="https://counter9.stat.ovh/private/counter.js?c=8tw5d88g5w6pqgru1lkl8mc395xdgqca&down=async"
+                    async></script>
+                <noscript><a href="https://www.contadorvisitasgratis.com" title="alberto contador"><img
+                            src="https://counter9.stat.ovh/private/contadorvisitasgratis.php?c=8tw5d88g5w6pqgru1lkl8mc395xdgqca"
+                            border="0" title="alberto contador" alt="alberto contador"></a></noscript>
+            </div>
+            <h2 class="titulo_main">
+                <div>
+                    <i id="icono_1" class="fa-solid fa-users"></i>
+                </div>
+                &nbsp; ¿Quienes somos?
+            </h2>
+            <section class="presentacion">
+
+                <div class="video">
+                    <svg>
+                        <rect></rect>
+                    </svg>
+                    <div class="intro">
+                        <iframe src="https://www.youtube.com/embed/nLioomm3e_c" width="100%" height="100%" class="yt"
+                            frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <p style="text-align:start;">Somos un <span> grupo de estudiantes nicoleños aficionados a la
+                        electrónica
+                    </span> que
+                    por pasión y amor decidimos ingresar al mercado local emprendiendo así una tienda de venta de
+                    componentes electrónicos. En el cual nuestra dinamica de negocio consiste en la combinación
+                    alternada del comercio tradicional y el
+                    <b>e-Commerce o comercio electrónico </b>, logrando de esta manera mejorar la accesibilidad, la
+                    publicidad y la atención al cliente.
+                </p>
+
+                <div class="definicion" id="defe">
+                    <h3 class="textos_1">¿Que es el e-Commerce?</h3>
+                    <div class="subcontenedor">
+                        <div>
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p class="textos_2" style="text-align:justify;">El comercio electrónico ​—también conocido como
+                            e-commerce
+                            (electronic commerce en inglés), comercio por Internet o comercio en línea— consiste en la
+                            compra y venta de productos o de servicios a través de internet, tales como redes sociales y
+                            otras páginas web. También puede ser definido como una actividad económica que permite el
+                            comercio de diferentes productos y servicios a partir de medios digitales, como páginas web,
+                            aplicaciones móviles y redes sociales.
+                        </p>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <h2 class="titulo_main">
+                <div>
+                    <i id="icono_1" class="fa-solid fa-gears"></i>
+                </div>
+                &nbsp; ¿Qué hacemos?
+            </h2>
+
+            <section class="presentacion">
+                <p style="text-align:start;">De manera clara y sinténtica nuestro emprendimiento
+                    consiste en un
+                    poyecto de negocio centralizado en la venta online y convencional de múltiples<b> componentes
+                        electrónicos
+                        y equipos audiovisuales e informáticos </b> (<i> <u>como por ejemplo:</u></i> computadores
+                    personales, televisores, parlantes, capacitores,
+                    tiristores, circuitos integrados, entre otros más).
+                </p>
+
+                <div class="contenedor" id="con__">
+
+                    <div class="definicion" id="def">
+                        <h3 class="textos_1">¿Que son los equipos infórmaticos?</h3>
+                        <div class="subcontenedor">
+                            <div>
+                                <span class="material-symbols-outlined" id="pc">
+                                    computer
+                                </span>
+                            </div>
+                            <p class="textos_2" style="text-align:justify;">Los equipos informáticos son todos los
+                                dispositivos que se conectan al ordenador y conforman un espacio de trabajo.
+                                En otras palabras un equipo infórmatico es un conjunto de aparatos electrónicos y
+                                servicios anexos que pueden
+                                girar en torno al ordenador personal, incluyendo el propio ordenador personal (ya sea de
+                                sobremesa o portátil), y la comunicación entre ordenadores y los servicios que dichas
+                                redes de intercomunicación precisan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="definicion" id="def">
+                        <h3 class="textos_1">¿Que son los componentes electrónicos?</h3>
+                        <div class="subcontenedor" id="capacitor">
+                            <div>
+                                <img src="./imagenes/capacitor.png" alt="">
+                            </div>
+                            <p class="textos_2" style="text-align:justify;">Un componente electrónico es un dispositivo
+                                que forma parte de un circuito electrónico. Se suelen encapsular, generalmente en un
+                                material cerámico, metálico o plástico, y terminar en dos o más terminales o patillas
+                                metálicas. Se diseñan para ser conectados entre ellos, normalmente mediante soldadura, a
+                                un circuito impreso, para formar el mencionado circuito.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <h2 class="titulo_main">
+                <img src="./imagenes/organizacion.png" alt="" id="orga">
+                &nbsp; ¿Como lo hacemos?
+            </h2>
+
+            <section class="presentacion">
+                <p style="text-align:start; margin-bottom: 0%;">Para explicar de manera simple el metódo de organización
+                    de nuestra futura tienda decidimos elaborar una infografía que contenga las principales
+                    actividades.
+                </p>
+
+                <div class="infografia">
+                    <div class="linea_prima" id="linea_1">
+                        <div class="circulos" id="cir_1">
+                            <i class="fa-regular fa-handshake"></i>
+                        </div>
+                        <div class="cuadro_texto" id="cuadro_1">
+                            <h2>Socios</h2>
+                            <p>
+                                Todas aquellas empresas y personas contribuyentes
+                                a la subsistencia y productividad de nuestro
+                                negocio.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="linea_prima" id="linea_2">
+                        <div class="circulos" id="cir_2">
+                            <i class="fa-solid fa-dolly"></i>
+                        </div>
+                        <div class="cuadro_texto" id="cuadro_2">
+                            <h2>Distribuidores</h2>
+                            <p>El producto demandado es solicitado a los grandes o pequeños centros de distribución
+                                cercanos.</p>
+                        </div>
+                    </div>
+                    <div class="linea_prima" id="linea_3">
+                        <div class="circulos" id="cir_3">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <div class="cuadro_texto" id="cuadro_3">
+                            <h2>Logística</h2>
+                            <p>Posteriormente el producto pasa por diversos procesos administrativos hasta que
+                                finalmente es cargado y transportado a su destino.</p>
+                        </div>
+                    </div>
+                    <div class="linea_prima" id="linea_4">
+                        <div class="circulos" id="cir_4">
+                            <i class="fa-solid fa-shop"></i>
+                        </div>
+                        <div class="cuadro_texto" id="cuadro_4">
+                            <h2>Tienda</h2>
+                            <p>
+                                El producto una vez transportado llega a nuestro local <b> "Electrónica Derivada"</b>.
+                                <br>
+                                Y ahí mismo verificamos la integridad de la mercancía.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="linea_prima" id="linea_5">
+                        <div class="circulos" id="cir_5">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="cuadro_texto" id="cuadro_5">
+                            <h2>Clientes</h2>
+                            <p>
+                                Finalmente el producto se encuentra públicamente en venta tanto de manera online como
+                                tradicional.
+                                <br>
+                                <i><b> "A un solo click de tí" </b></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="frase">
+                <svg class="svg_1">
+                    <rect class="rect_1"></rect>
+                </svg>
+
+                <h3>“Las grandes oportunidades nacen de haber sabido aprovechar las pequeñas”.
+                    <br>
+                    <p> Bill Gates, cofundador de
+                        la empresa de software Microsoft.</p>
+                </h3>
+
+                <img src="/imagenes/mantenimiento-informatico-empresas-madrid.webp" alt="" width="100%" height="100%" >
+
+            </div>
+            <div class="acordiones">
+                <button class="acco_1" id="accordion">
+                    <i class="fa-solid fa-check" id="check"></i>
+                    <h2>Misión</h2>
+                    <div class="fle">
+                        <i class="fa-solid fa-caret-up" id="flecha"></i>
+                    </div>
+                </button>
+                <div class="panel" id="panel_1">
+                    <p><b> Aportar de manera única dispositivos electrónicos de alta calidad
+                            que innovan y ayudan los trabajos, proyectos e ideas de los nicoleños. </b></p>
+                </div>
+
+                <button class="acco_2" id="accordion">
+                    <i class="fa-solid fa-check" id="check"></i>
+                    <h2>Visión</h2>
+                    <div class="fle">
+                        <i class="fa-solid fa-caret-up" id="flecha"></i>
+                    </div>
+                </button>
+
+                <div class="panel">
+                    <p><b>Ser la mejor casa de Electrónica de nuestra ciudad y transformar
+                            <i> "Electronica Derivada" </i> &nbsp; en un negocio que inspire y desarrolle
+                            potenciales. </b></p>
+                </div>
+
+                <button class="acco_3" id="accordion">
+                    <i class="fa-solid fa-check" id="check"></i>
+                    <h2>Valores</h2>
+                    <div class="fle">
+                        <i class="fa-solid fa-caret-up" id="flecha"></i>
+                    </div>
+                </button>
+
+                <div class="panel" id="panel_3">
+                    <p><b>
+                            ⦿ RESPOSABILIDAD
+                            <br>
+                            ⦿ PUNTUALIDAD
+                            <br>
+                            ⦿ SIMPLICIDAD
+                            <br>
+                            ⦿ HONESTIDAD
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+            <script>
+                var acc = document.getElementsByClassName("acco_3");
+                var ac = document.getElementsByClassName("acco_2");
+                var a = document.getElementsByClassName("acco_1");
+                var i;
+
+                for (i = 0; i < a.length; i++) {
+                    a[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    });
+                }
+
+                for (i = 0; i < ac.length; i++) {
+                    ac[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    });
+                }
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    });
+                }
+            </script>
+
+            <a class="descarga" href="/Lienzo CANVAS de -Electrónica Derivada-.pdf" download>
+                <button class="btn">
+                    <div>
+                        <i class="fa-solid fa-download"></i>
+                    </div>
+                    <span>Descargar Lienzo Canva</span>
+                </button>
+            </a>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Pie de pagina-->
+    <footer>
+        <h1 class="tit">Lista de integrantes</h1>
+        <div class="tarjeta_">
+
+            <div class="card12">
+                <div class="foto">
+                    <img src="/imagenes/coll.jpg" alt="">
+                </div>
+                <div class="cuadro">
+                    <h1> <span id="A"> Andrés </span> Coll Prediger</h1>
+                    <p class="titulo12">Programador del sitio web</p>
+
+                    <div class="ico_1" style="margin: 5px 0;">
+                        <a href="linkedin.com/in/andres-coll-prediger-a67559220"><i id="uno"
+                                class="fa fa-linkedin"></i></a>
+                        <a
+                            href="mailto:andrescollsn@gmail.com?subject=Hola! Soy Andrés, el programador del sitio!! Gracias por contáctarte!"><i
+                                id="dos" class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <a href="https://www.eest6.com/">
+                        <button class="bo_1">
+                            Colegio E.E.S.T N°6
+                        </button>
+                    </a>
+                    <a href="https://revoluciondigital.com.ar/">
+                        <button class="bo_2">
+                            Revolución digital
+                        </button>
+                    </a>
+                    <a href="">
+                        <button class="button12">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Contacto
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card12">
+                <div class="foto">
+                    <img id="russo" src="/imagenes/russo.jpeg" alt="">
+                </div>
+                <div class="cuadro">
+                    <h1> <span id="A"> Santiago </span> Russo</h1>
+                    <p class="titulo12">Soporte técnico</p>
+
+                    <div class="ico_1" style="margin: 5px 0;">
+                        <a href="#" id="L_2"><i id="uno" class="fa fa-linkedin"></i></a>
+                        <a href="#" id="F_2"><i id="dos" class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <a href="https://www.eest6.com/">
+                        <button class="bo_1">
+                            Colegio E.E.S.T N°6
+                        </button>
+                    </a>
+                    <a href="https://revoluciondigital.com.ar/">
+                        <button class="bo_2">
+                            Revolución digital
+                        </button>
+                    </a>
+                    <a href="#" id="contacto_2">
+                        <button class="button12">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Contacto
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card12">
+                <div class="foto">
+                    <img id="monjes" src="/imagenes/monjes.jpeg" alt="">
+                </div>
+                <div class="cuadro">
+                    <h1> <span id="A"> Ramiro </span> Monjes</h1>
+                    <p class="titulo12">Atención al cliente</p>
+
+                    <div class="ico_1" style="margin: 5px 0;">
+                        <a href="#" id="L_3"><i id="uno" class="fa fa-linkedin"></i></a>
+                        <a href="#" id="F_3"><i id="dos" class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <a href="https://www.eest6.com/">
+                        <button class="bo_1">
+                            Colegio E.E.S.T N°6
+                        </button>
+                    </a>
+                    <a href="https://revoluciondigital.com.ar/">
+                        <button class="bo_2">
+                            Revolución digital
+                        </button>
+                    </a>
+                    <a href="#" id="contacto_3">
+                        <button class="button12">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Contacto
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card12">
+                <div class="foto">
+                    <img id="benja" src="/imagenes/benja.jpeg" alt="">
+                </div>
+                <div class="cuadro">
+                    <h1> <span id="A"> Gabriel </span> Oldani</h1>
+                    <p class="titulo12">Supervisor de mercancía y tesorero</p>
+
+                    <div class="ico_1" style="margin: 5px 0;">
+                        <a href="#" id="L_4"><i id="uno" class="fa fa-linkedin"></i></a>
+                        <a href="#" id="F_4"><i id="dos" class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <a href="https://www.eest6.com/">
+                        <button class="bo_1">
+                            Colegio E.E.S.T N°6
+                        </button>
+                    </a>
+                    <a href="https://revoluciondigital.com.ar/">
+                        <button class="bo_2">
+                            Revolución digital
+                        </button>
+                    </a>
+                    <a href="#" id="contacto_4">
+                        <button class="button12">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Contacto
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+            <script>
+                let L_4 = document.getElementById("L_4");
+                L_4.onclick = click;
+                let F_4 = document.getElementById("F_4");
+                F_4.onclick = click;
+                let contacto_4 = document.getElementById("contacto_4");
+                contacto_4.onclick = click;
+
+                let L_3 = document.getElementById("L_3");
+                L_3.onclick = click;
+                let F_3 = document.getElementById("F_3");
+                F_3.onclick = click;
+                let contacto_3 = document.getElementById("contacto_3");
+                contacto_3.onclick = click;
+
+                let L_2 = document.getElementById("L_2");
+                L_2.onclick = click;
+                let F_2 = document.getElementById("F_2");
+                F_2.onclick = click;
+                let contacto_2 = document.getElementById("contacto_2");
+                contacto_2.onclick = click;
+
+                let L_1 = document.getElementById("L_1");
+                L_1.onclick = click;
+                let F_1 = document.getElementById("F_1");
+                F_1.onclick = click;
+                let contacto_1 = document.getElementById("contacto_1");
+                contacto_1.onclick = click;
+
+                function click(evento) {
+                    evento.preventDefault();
+                    swal({
+                        title: "Lo siento!",
+                        text: "Este integrante no posee registro",
+                        icon: "warning",
+                    });
+                };
+            </script>
+       
+    <script src="edad.js"></script>
+</body>
+
+</html>
