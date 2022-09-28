@@ -15,13 +15,13 @@ body {
     position: relative;
     text-align: center;
     animation: side 2s 1.5s forwards ease;
-    -ms-flex: 30%;
+    -ms-flex: 29%;
     flex: 29%;
     padding: 0%;
     height: auto;
-    z-index: 10;
+    z-index: 50;
     color: #0446aa;
-    border: #0446aa 20px solid;
+    border: #0446aa 10px solid;
     border-top: 0px;
     border-bottom: 0px;
 }
@@ -29,6 +29,7 @@ body {
 .productos {
     display: grid;
     height: 100px;
+    width: 100%;
     overflow: hidden;
     position: relative;
     margin: auto;
@@ -132,6 +133,8 @@ img {
 
 .mySlides {
     display: none;
+    font-family: font_4;
+    font-size: medium;
 }
 
 .diapositiva {
@@ -191,6 +194,8 @@ img {
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    font-family: font_4;
+    font-size: medium;
 }
 
 

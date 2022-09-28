@@ -18,25 +18,25 @@ footer {
     height: 75.5%;
     position: relative;
     z-index: 1;
-  
+
     background-color: #0446aa;
 }
 
 .tarjeta_ {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     width: 100%;
     height: auto;
     flex-wrap: wrap;
     top: 0px;
-    background-color:#0b5fdd;
+    background-color: #0b5fdd;
     position: relative;
     z-index: 50;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.tit{
+.tit {
     text-align: center;
     padding: 10px;
     margin: 0%;
@@ -127,6 +127,19 @@ footer {
 #dos:hover {
     color: brown;
 }
+
+#tres:hover {
+    background-image: linear-gradient(200deg,#feda75,rgb(254, 218, 117),#fa7e1e,rgb(250, 126, 30),#d62976,rgb(214, 41, 118),#962fbf,rgb(150, 47, 191),#4f5bd5,rgb(79, 91, 213));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+#tres{
+    color: #000;
+    scale: 120%;
+}
+
 
 .foto img {
     width: 100%;

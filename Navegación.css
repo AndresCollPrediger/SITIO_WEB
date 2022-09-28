@@ -25,11 +25,11 @@ nav {
 
 
 @keyframes barra {
-    to{
+    to {
         opacity: 100%;
-       transform: translateY(0%);
+        transform: translateY(0%);
     }
-    
+
 }
 
 .logo {
@@ -51,7 +51,7 @@ nav {
     transition: 1s;
 }
 
-#na{
+#na {
     flex-basis: 70%;
     flex-grow: 1;
     overflow: hidden;
@@ -119,7 +119,7 @@ nav {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     position: absolute;
-   opacity: 0%;
+    opacity: 0%;
     top: 35%;
     left: 50%;
 
@@ -249,8 +249,9 @@ nav {
     margin: 0%;
     margin-left: 2vh;
     position: relative;
-    transform: scale(120%);
+    scale: 120%;
     z-index: 2;
+    animation: rotar 3s infinite;
 }
 
 .logo h3 {
@@ -260,7 +261,7 @@ nav {
     color: #ffffff;
     font-weight: 500;
     letter-spacing: 2px;
-    font-size:xx-large;
+    font-size: xx-large;
     text-align: center;
     text-shadow: 1px 1px 15px #ffffff5f;
     font-family: font_2;
@@ -268,28 +269,27 @@ nav {
 }
 
 @keyframes luz {
-    to{
+    to {
         text-shadow: 1px 1px 15px #ffffff;
     }
 }
 
-.circulo {
-    width: 38px;
-    position: absolute ;
-    height: 40px;
-    scale: 218%;
-    top: 31.5px;
-    left: 40px;
-    border-top: #ffffff groove 2px;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50%;
-    animation: rotar 500ms infinite linear ;
-    
-}
 
-@keyframes rotar  {
-    to{
-       transform: rotate(360deg);  
+
+@keyframes rotar {
+    20% {
+        transform: rotate(20deg)
+    }
+
+    40% {
+        transform: rotate(-15deg)
+    }
+
+    60% {
+        transform: rotate(10deg)
+    }
+
+    80% {
+        transform: rotate(-5deg)
     }
 }
